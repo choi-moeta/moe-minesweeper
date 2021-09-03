@@ -22,7 +22,6 @@
   class={`
     bg-white
     rounded-xl
-    h-40
     transition-opacity
     ${
       isVisible
