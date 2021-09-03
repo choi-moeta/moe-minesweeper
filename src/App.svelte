@@ -1,5 +1,6 @@
 <script lang="ts">
   import EndMessage from 'src/lib/EndMessage.svelte';
+  import Header from 'src/lib/Header.svelte';
   import Game from 'src/lib/Game.svelte';
   import type { GameEndStatus } from 'src/board';
 
@@ -15,6 +16,7 @@
 </script>
 
 <main class="bg-gray-100 flex">
+  <Header />
   <div class={`flex-grow h-screen flex items-center justify-center transition-all`}>
     <Game bind:this={game} on:end={handleGameEnd} />
     <EndMessage bind:this={endMessage} on:retry={handleRetry} />
