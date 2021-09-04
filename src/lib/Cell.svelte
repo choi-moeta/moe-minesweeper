@@ -29,7 +29,9 @@
 
 <div
   class={`
-  w-12 h-12
+  cell
+  w-8 h-8
+  md:(w-12 h-12)
   group
   ${status == 'open' && 'bg-white'}
   ${status != 'open' && 'bg-gray-100 text-gray-300'}

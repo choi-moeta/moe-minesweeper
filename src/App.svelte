@@ -17,7 +17,13 @@
 
 <main class="bg-gray-100 flex">
   <Header />
-  <div class={`flex-grow h-screen flex items-center justify-center transition-all`}>
+  <div
+    class={`
+    flex-grow h-screen
+    flex flex-col lg:flex-row items-center justify-center gap-x-40 gap-y-16
+    transition-all
+  `}
+  >
     <Game bind:this={game} on:end={handleGameEnd} />
     <EndMessage bind:this={endMessage} on:retry={handleRetry} />
   </div>

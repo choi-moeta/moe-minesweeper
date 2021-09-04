@@ -25,8 +25,8 @@
     transition-opacity
     ${
       isVisible
-        ? 'overflow-visible px-6 py-4 ml-40 w-80 opacity-100'
-        : 'overflow-hidden px-0 py-0 ml-0 w-0 opacity-0'
+        ? 'block overflow-visible px-6 py-4  w-80 opacity-100'
+        : 'hidden overflow-hidden px-0 py-0  w-0 opacity-0'
     }
   `}
 >
